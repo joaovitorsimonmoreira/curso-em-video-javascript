@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex004.2</title>
+  <style>
+    body{
+      font: bold 20px arial;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    /* usando .toFixed(), .replace(), .tolocalstring() */
+    
+    var n1 = ('1545.5')
+    n1.toFixed(2) // resultado == 1545.50 // escolhe quantos numeros aparece depois da . ou ,
+>   n1.toFixed(2).replace (".", ",") // resultado == 1545,50 // .replace troca algo por algo(nesse caso .  por ,)
+
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // diz que esse valor esta representado em REAL
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex002</title>
+</head>
+<body>
+  <h1>olá mundo</h1>
+  <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus eligendi laborum, sequi natus commodi cumque quaerat libero architecto ut et facilis! Incidunt nisi officiis sint velit ipsum, deleniti sit modi?</p>
+
+  <script>
+   var n1 = Number(prompt('escolha um numero')) //variavel "number" transforma o conteudo em numero
+   var n2 = Number(prompt('escolha outro numero'))
+   var s = n1+n2
+/* existe 3 maneiras de se transforma o conteudo para numero
+   Number.parseInt(#) (numero inteiro 2)
+   Number.parseFloat(#) (numero fracionado 2.5)
+   Number(#) (o java decide se é inteiro ou fracionado(mais atual))
+*/
+/* para transforma o conteudo em string
+   String(#)
+   (#).toString
+*/
+/*number(numero)
+  string(conjunto de caracteres ex xxxxx-xxxx xx-xxxx-xxx)
+*/
+
+
+
+   alert('a soma dos numeros são ' +  s ) /*o  sinal + pode ser de concatenação(juntar coisas) ou de adição, funcionando da seguinte maneira 'number + number == adição' 'string + string == concatenação'*/
+
+   alert(`a soma dos numeros é ${s}`) // maneira moderna de se escrever (começa com crase `e os codigos usa-se ${codigo} `)
+  </script>
+</body>
+</html>

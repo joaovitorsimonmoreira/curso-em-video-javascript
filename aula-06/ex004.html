@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex004</title>
+  <style>
+    body{
+      font: bold 20px arial;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var nome = prompt('digite seu nome')
+    alert('seu nome ira aparecer em letras maiusculas!')
+    alert(`aqui esta ${nome.toUpperCase()}`) //.toUpperCase() transforma o conteudo para letra maiuscula
+    var nome_mn = prompt('escreva seu nome com letras maiusculas, ele ira aparecer com letras minusculas')
+    alert(`aqui está ${nome_mn.toLowerCase()}`) // transforma o conteudo para letra minuscula
+
+    /* usando document.write (escreve no documento html)*/
+
+    document.write(`bem vindo ${nome} <br/>`) // para modificações visuais usar html e css (styles por fora ou dentro da tag) 
+
+    /*  usando .length*/
+
+    document.write(`seu nome tem ${nome.length}  letras`)
+  </script>
+</body>
+</html>
