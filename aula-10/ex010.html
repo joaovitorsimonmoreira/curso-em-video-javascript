@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex010</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="area">
+    <p>interaja</p>
+  </div>
+
+  <script>
+    var a = document.getElementById('area')//getelementby..(pego o elemento nesse caso o (id area)
+    a.addEventListener('click', clicou) //cria 1 evento(no click ele faz o evento 'clicou')
+    a.addEventListener('mouseenter', entrou)
+    a.addEventListener('mouseout', saiu)
+
+    function clicou(){ //criando a função 'clicou' que criei 1 evento logo acima
+      a.innerText= 'clicou'//innertext, colocando o seguinte texto
+      a.style.background= 'red'
+    }
+    function entrou(){
+      a.innerText= 'basta clicar'
+      a.style.background = 'gray'//dizendo que o elemento vai ter 1 background amarelo
+    }
+
+    function saiu(){
+      a.innerText= 'tirou o mouse'
+      a.style.background= 'yellow'
+    }
+
+    
+  </script>
+</body>
+</html>
