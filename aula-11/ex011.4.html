@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa de Nacionalidade</title>
+</head>
+<body>
+  <h1>Pesquisa sobre nacionalidade</h1>
+  Coloque aqui, seu local de nascimento <input type="text" name="nactxt" id="nactxt">
+  <input type="button" value="Enviar" onclick="clicou()">
+  <div class="res"></div>
+
+
+  <script>
+    function clicou(){
+    var nac = document.querySelector('#nactxt')
+    var res = document.querySelector('.res')
+    var nac = String(nactxt.value)
+    
+    res.innerHTML = `Você nasceu no País ${nac}`
+
+    if(nac == 'Brasil'){
+      res.innerHTML += '<br/> você é Brasileiro'
+    }else{
+      res.innerHTML += '<br/> Você é estrangeiro'
+    }
+    
+  }
+    
+  </script>
+</body>
+</html>
