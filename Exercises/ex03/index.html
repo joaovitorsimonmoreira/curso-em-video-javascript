@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de passos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Coloque aqui os dados:</h1>
+    </header>
+    <section class="contents">
+      <div class="content1">
+        <div>inicio: <input type="number" name="nInicio" id="nInicio"></div>
+        <div>fim: <input type="number" name="nFim" id="nFim"></div>
+        <div>passo: <input type="number" name="nPasso" id="nPasso"></div>
+        <button onclick="contar()">
+          <input class="button" type="button" value="contar">
+        </button>
+        <p id="res">Esperando dados...</p>
+      </div>
+      
+    </section>
+    <footer>
+      <p>Footer interessante</p>
+    </footer>
+  </main>
+
+  <script src="contador.js"></script>
+</body>
+</html>
